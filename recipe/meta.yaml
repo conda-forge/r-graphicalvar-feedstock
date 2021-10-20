@@ -1,4 +1,4 @@
-{% set version = '0.2.4' %}
+{% set version = "0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphicalVAR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphicalVAR/graphicalVAR_{{ version }}.tar.gz
-  sha256: 0020b933c9dc1984a0f74c7b3005c71ec2b666e8f536271b064c3160f86ed441
+  sha256: 0502dcf513773b068402959d8c05b9fb981df013f26e6b053eae5c3cff007bd7
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
 
   rpaths:
@@ -37,7 +37,7 @@ requirements:
     - libblas
     - libcblas
     - liblapack
-    - liblapacke    
+    - liblapacke
     - r-base
     - r-matrix
     - r-rcpp >=0.11.3
@@ -70,13 +70,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=graphicalVAR
   license: GPL-2.0-only
-  summary: Estimates within and between time point interactions in experience sampling data,
-    using the Graphical vector autoregression model in combination with regularization.
-    See also Epskamp, Waldorp, Mottus & Borsboom (2018) <doi:10.1080/00273171.2018.1454823>.
+  summary: Estimates within and between time point interactions in experience sampling data, using the Graphical vector autoregression model in combination with regularization. See also Epskamp, Waldorp, Mottus & Borsboom (2018) <doi:10.1080/00273171.2018.1454823>.
 
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
