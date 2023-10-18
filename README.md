@@ -3,6 +3,7 @@ About r-graphicalvar-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-graphicalvar-feedstock/blob/main/LICENSE.txt)
 
+
 About r-graphicalvar
 --------------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=graphicalVAR
 Package license: GPL-2.0-only
 
 Summary: Estimates within and between time point interactions in experience sampling data, using the Graphical vector autoregression model in combination with regularization. See also Epskamp, Waldorp, Mottus & Borsboom (2018) <doi:10.1080/00273171.2018.1454823>.
+
 About r-graphicalvar
 --------------------
 
