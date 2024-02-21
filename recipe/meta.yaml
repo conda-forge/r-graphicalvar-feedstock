@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphicalVAR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphicalVAR/graphicalVAR_{{ version }}.tar.gz
-  sha256: cae80cc508b38cc1ad58b8cd91481a869c4ca73d6d369cf4cd6738b99648fcf2
+  sha256: a3bd8318bfa89882d579d8f0f1ffe0cf9696303627ec29d0413adf31d939bddc
 
 build:
   merge_build_host: true  # [win]
