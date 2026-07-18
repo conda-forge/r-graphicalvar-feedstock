@@ -1,4 +1,4 @@
-{% set version = "0.3.4" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphicalVAR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphicalVAR/graphicalVAR_{{ version }}.tar.gz
-  sha256: a3bd8318bfa89882d579d8f0f1ffe0cf9696303627ec29d0413adf31d939bddc
+  sha256: 32ed7451a34b91a0156482c84f1b6e225b354558f13f561ccb31c131e7fd881d
 
 build:
-  number: 2
+  number: 0
 
   rpaths:
     - lib/R/lib/
